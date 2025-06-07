@@ -61,3 +61,34 @@ function _last(array) {
 }
 
 console.log(_last(randomArray));
+// function _compact(array) {
+//     const result = [];
+//     for (let i = 0; i < array.length; i++) {
+//         if (array[i]) {
+//             result.push(array[i]);
+//         }
+//     }
+//     return result;
+// }
+//
+// console.log(_compact(
+//     [1, 2, false, true, 3, 4, '', 5, null, "sdsds"]
+// ));
+
+const _compactFilter = array => array.filter(Boolean);
+
+
+
+function _compact(array) {
+    return array.filter(item => !!item);
+}
+
+console.log(_compact(
+    [1, 2, false, true, 3, 4, '', 5, null, "sdsds"]
+));
+
+function _join(array, separator) {
+    return array.join(separator);
+}
+
+console.log(_join(["a", "b", "c", "d"], '~'));
