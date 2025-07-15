@@ -1,4 +1,4 @@
-function _drop(array: any[], number: number): any {
+function _drop(array: any[], number: number = 1): any {
     return array.slice(number);
 }
 

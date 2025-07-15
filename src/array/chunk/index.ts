@@ -5,4 +5,4 @@ const chunk = (arr: any[], index: number): any[] => {
     return result
 }
 
-export default chunk
+export default chunk;
