@@ -8,6 +8,7 @@ export default function _chunk(array: any[], size: number = 1) {
         currentIndex += size;
         result.push(tempArray);
     }
+
     return result;
 }
 
