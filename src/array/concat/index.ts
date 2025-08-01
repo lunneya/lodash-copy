@@ -3,12 +3,7 @@ function _concat(array: any[], ...values: any[]): any[] {
 }
 
 function __concat(array: any[], ...values: any[]): any[] {
-    let result: any[] = [];
-
-    // copy array
-    for (let i = 0; array.length > i; i++) {
-        result.push(array[i]);
-    }
+    let result: any[] = [...array];
 
     for (let i = 0; i < values.length; i++) {
         const item = values[i];
