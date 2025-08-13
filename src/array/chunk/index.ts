@@ -11,8 +11,6 @@ export default function _chunk(array: any[], size: number = 1) {
     return result;
 }
 
-console.log(_chunk(['a', 'b', 'c', 'd', 'e', 'f', 'g'], 3));
-
 export function _chunkIterable(array: any[], size: number = 1): any[] {
     let result: any[] = [];
 
@@ -36,20 +34,3 @@ export function _chunkIterable(array: any[], size: number = 1): any[] {
 
     return result;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
