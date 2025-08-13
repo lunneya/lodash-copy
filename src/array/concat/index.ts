@@ -17,4 +17,6 @@ function __concat(array: any[], ...values: any[]): any[] {
     return result;
 }
 
+console.log(_concat([1], 2, [3], [[4]]))
+
 export default { _concat, __concat };

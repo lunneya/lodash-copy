@@ -21,6 +21,4 @@ function _flatten(array: any[]) {
     return result;
 }
 
-console.log(_flatten([1, [2, 3], [4, [5]], null]));
-
 export default _flatten;
